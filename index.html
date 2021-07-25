@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+    <!--CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--.CDN Bootstrap-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="build/css/app.min.css">
+    <!--.Custom CSS-->
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="text-center mt-5">Speech Recognition</h1>
+
+        <div class="boton">
+            <button id="btn-voice" class="d-block mx-auto mt-5 btn btn-primary">Presione aqui para comenzar a grabar</button>
+        </div>
+
+        <div class="texto mt-3">
+            <p class="text-center">Su grabacion se mostrará aquí</p>
+
+            <div id="text-voice" class="d-none">
+                <!--Aqui va el texto que digas por voz-->
+            </div>
+        </div>
+    </div>
+
+    <!--CDN JS BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--.CDN JS BOOTSTRAP-->
+
+    <script src="build/js/bundle.min.js"></script>
+  
+</body>
+</html>

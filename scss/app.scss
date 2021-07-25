@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+$fuentePrimaria:  'Roboto', sans-serif;
+$colorPrimario: #2193b0;
+$colorSecundario: #6dd5ed;
+$blanco: white;
+
+body{
+    font-family: $fuentePrimaria;
+    background: $colorPrimario;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $colorSecundario, $colorPrimario);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $colorSecundario, $colorPrimario); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container{
+    background-color: $blanco;
+    margin: 5rem auto;
+    padding: 5px;
+    border-radius: 1rem;
+}
+
+.d-block{
+    display: block;
+    margin: 0 auto;
+}
