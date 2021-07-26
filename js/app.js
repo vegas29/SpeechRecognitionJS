@@ -29,12 +29,15 @@ function ejecutarSpeechAPI(){
 
         const {confidence, transcript} = e.results[0][0];
 
+        const precisao = Math.round(confidence * 100);
+
         const speech = document.createElement('P');
         speech.classList.add('text-center');
         speech.innerHTML = `Esto fue lo que dijiste: ${transcript}`;
 
         const precision = document.createElement('P');
         precision.classList.add('text-center', 'mt-3');
+        precision.innerHTML = `La precision fue de: ${precisao}%`;
 
         texto.appendChild(precision);
         texto.appendChild(speech);
